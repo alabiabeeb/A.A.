@@ -35,13 +35,6 @@ export default function Home() {
       link: "https://al-hirz.onrender.com/",
     },
     {
-      tag: "School Management System",
-      title: "Eduflex",
-      image: "/eduflex.png",
-      desc: "A platform for managing and organizing school sports activities, Designed with Next.js and API integration.",
-      link: "https://eduflex-frontend-two.vercel.app/",
-    },
-    {
       tag: "Ecommerce",
       title: "MarketPro",
       image: "/marketpro.png",
@@ -59,7 +52,7 @@ export default function Home() {
   const skills = [
     {
       title: "Frontend Development",
-      desc: "Building modern and responsive web applications using HTML, CSS, JavaScript React.js, Git, Next.js, TypeScript, and Tailwind CSS.",
+      desc: "Building modern and responsive web applications using HTML, CSS, JavaScript React.js, React Native, Git, Next.js, TypeScript, and Tailwind CSS.",
     },
     {
       title: "UI Implementation",
@@ -103,7 +96,7 @@ export default function Home() {
       {/* ---------------- Hero ---------------- */}
       <div className="mt-36 px-4 sm:mt-50 sm:px-10 lg:px-40">
         <p className="mb-5 text-xs tracking-widest text-muted uppercase">
-          Mubarak Abdulsalam &bull; Based in Nigeria
+          Alabi Abeeb &bull; Based in Nigeria
         </p>
 
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row">
@@ -146,7 +139,21 @@ export default function Home() {
               I specialize in building responsive interfaces with modern
               technologies like React, Next.js, TypeScript, and Tailwind CSS.
             </h4>
+            <h4 className="text-start text-xl md:text-2xl">
+              I enjoy turning complex problems into simple, practical solutions
+              while paying close attention to performance, accessibility, and
+              user experience.
+            </h4>
 
+            <h4 className="text-start text-xl md:text-2xl">
+              I am constantly learning, experimenting with new technologies, and
+              improving my development workflow through real-world projects.
+            </h4>
+
+            <h4 className="text-start text-xl md:text-2xl">
+              I believe great products are built through clean code, thoughtful
+              design, continuous learning, and good collaboration.
+            </h4>
             <h4 className="text-start text-xl md:text-2xl">
               My goal is to transform ideas and designs into fast, scalable, and
               intuitive applications that users enjoy.
@@ -166,16 +173,20 @@ export default function Home() {
         </div>
 
         <div
-          className="flex aspect-square w-full max-w-xs shrink-0 items-center justify-center md:w-80 md:max-w-none"
-          style={{
-            borderRadius: "24px",
-            border: "1px solid var(--color-border)",
-            background:
-              "linear-gradient(135deg, var(--color-surface), var(--color-bg))",
-          }}
-        >
-          <User className="h-24 w-24 rounded-full bg-accent/20 p-5 text-accent/50" />
-        </div>
+  className="flex aspect-square w-full max-w-xs shrink-0 items-center justify-center overflow-hidden md:w-80 md:max-w-none"
+  style={{
+    borderRadius: "24px",
+    border: "1px solid var(--color-border)",
+    background:
+      "linear-gradient(135deg, var(--color-surface), var(--color-bg))",
+  }}
+>
+<img
+  src="/profiles.png"
+  alt="Abeeb - Frontend Developer"
+  className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+/>
+</div>
       </div>
 
       {/* ---------------- Work ---------------- */}
@@ -256,54 +267,61 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ---------------- Contact ---------------- */}
-      <div className="mt-16 px-4 sm:mt-20 sm:px-10 lg:px-40">
-        <div
-          className="px-6 text-center sm:px-10"
-          style={{
-            border: "1px solid var(--color-border)",
-            borderRadius: "32px",
-            background: "var(--color-bg)",
-            padding: "60px 20px",
-          }}
-        >
-          <p className="mb-4 text-xs font-bold tracking-widest text-muted uppercase">
-            Get in touch
-          </p>
-          <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
-            Let&apos;s build something{" "}
-            <span className="text-accent">great.</span>
-          </h2>
-          <p className="mx-auto mt-5 max-w-md text-muted">
-            Have a project in mind or just want to say hi? My inbox is always
-            open.
-          </p>
+    {/* ---------------- Contact ---------------- */}
+<div className="mt-16 px-4 sm:mt-20 sm:px-10 lg:px-40">
+  <div
+    className="px-6 text-center sm:px-10"
+    style={{
+      border: "1px solid var(--color-border)",
+      borderRadius: "32px",
+      background: "var(--color-bg)",
+      padding: "60px 20px",
+    }}
+  >
+    <p className="mb-4 text-xs font-bold tracking-widest text-muted uppercase">
+      Get in touch
+    </p>
+    <h2 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
+      Let&apos;s build something{" "}
+      <span className="text-accent">great.</span>
+    </h2>
+    <p className="mx-auto mt-5 max-w-md text-muted">
+      Have a project in mind or just want to say hi? My inbox is always
+      open.
+    </p>
 
-          <Link
-            href=""
-            className="mt-8 inline-block font-bold text-white"
-            style={{
-              background: "var(--color-accent)",
-              borderRadius: "999px",
-              padding: "14px 28px",
-            }}
-          >
-            Send me a message →
-          </Link>
+    <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+      <Link
+        href="mailto:your.email@example.com"
+        className="inline-block font-bold text-white"
+        style={{
+          background: "var(--color-accent)",
+          borderRadius: "999px",
+          padding: "14px 28px",
+        }}
+      >
+        Send me a message →
+      </Link>
+      
+      {/* ADD CV BUTTON HERE */}
+      <a
+        href="/public/Alabi_Abeeb_Frontend_Developer_CV_Updated.pdf"
+        download
+        className="inline-block font-bold"
+        style={{
+          border: "1px solid var(--color-border)",
+          borderRadius: "999px",
+          padding: "14px 28px",
+          background: "var(--color-surface)",
+        }}
+      >
+        📄 Download CV
+      </a>
+    </div>
 
-          <div className="mt-9 flex justify-center gap-4">
-            <Link href="https://www.facebook.com/profile.php?id=100070202539212" className="text-ink/80 hover:text-accent">
-              Facebook
-            </Link>
-            <Link href="https://www.linkedin.com/in/mubarak-abdulsalam-ab128a3a4" className="text-ink/80 hover:text-accent">
-              LinkedIn
-            </Link>
-            <Link href="https://github.com/Mubarak771" className="text-ink/80 hover:text-accent">
-              GitHub
-            </Link>
-          </div>
-        </div>
-      </div>
+    {/* Social links remain here */}
+  </div>
+</div>
       {/* ---------------- Footer ---------------- */}
       <p className="py-10 text-center text-xs text-muted">
         &copy; {new Date().getFullYear()} Devraq. Designed with intention.

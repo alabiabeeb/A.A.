@@ -37,7 +37,7 @@ export default function Header() {
         }}
       >
         <Link href="/" className="font-bold text-2xl">
-          Devraq.
+          A.A.
         </Link>
 
         {/* desktop nav */}
@@ -52,7 +52,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="tel:+2349054803670"
+            href="tel:+2348062237162"
             className="bg-accent p-2 px-3 rounded text-white text-center"
           >
             Book a free call
