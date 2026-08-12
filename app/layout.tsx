@@ -10,7 +10,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Mubarak | Frontend Developer",
+  title: "A.A. | Frontend Developer",
   icons: {
     icon: [{ url: "/profile.png", type: "image/png" }],
     apple: [{ url: "/profile.png", type: "image/png" }],

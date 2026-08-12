@@ -24,8 +24,15 @@ export default function Home() {
       tag: "Fintech",
       title: "BudgetFlex",
       image: "/budgetflex.png",
-      desc: "Designed and developed an analytics dashboard with interactive charts and real-time insights, Designed with Next.js and API integration.",
+      desc: "A fintech analytics dashboard with interactive charts, real-time financial insights, and secure API integrations, built with Next.js.",
       link: "https://www.budgetflexinc.com/",
+    },
+        {
+      tag: "Hospital Management",
+      title: "Hospital Management",
+      image: "/hospital management.png",
+      desc: "A hospital management system for patient records, appointment scheduling, billing, and staff dashboards, implemented with Next.js and REST APIs.",
+      link: "https://hospital-management-s438.vercel.app",
     },
     {
       tag: "Online Arabic School",
